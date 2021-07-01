@@ -13,7 +13,7 @@ street_view_url = "https://maps.googleapis.com/maps/api/streetview"
 shapefile_folder = os.path.join(os.curdir, "data/shapefiles")
 files = [f for f in os.listdir(shapefile_folder)]
 
-num_points = 100
+num_points = 50
 for f in files:
     country_name = f[:-4]
     pg = PointGenerator(country_name)
