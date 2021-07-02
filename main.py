@@ -53,12 +53,12 @@ async def get_image(ctx, table, id):
 
 @bot.command(name="get", aliases=["g", "G", "Get"])
 async def get_image_guild(ctx):
-    get_image(ctx, guild_table, ctx.message.guild.id)
+    await get_image(ctx, guild_table, ctx.message.guild.id)
 
 
 @bot.command(name="getself", aliases=["gs", "Gs", "Getself"])
 async def get_image_self(ctx):
-    get_image(ctx, user_table, ctx.message.user.id)
+    await get_image(ctx, user_table, ctx.message.user.id)
 
 
 async def skip_image(ctx, table, id):
@@ -86,12 +86,12 @@ async def skip_image(ctx, table, id):
 
 @bot.command("skip", aliases=["s", "S", "Skip"])
 async def skip_image_guild(ctx):
-    skip_image(ctx, guild_table, ctx.message.guild.id)
+    await skip_image(ctx, guild_table, ctx.message.guild.id)
 
 
 @bot.command("skipself", aliases=["ss", "Ss", "Skipself"])
 async def skip_image_self(ctx):
-    skip_image(ctx, user_table, ctx.message.user.id)
+    await skip_image(ctx, user_table, ctx.message.user.id)
 
 
 async def try_guess(ctx, table, id):
@@ -135,12 +135,12 @@ async def try_guess(ctx, table, id):
 
 @bot.command("try", aliases=["t", "T", "Try"])
 async def try_guess_guild(ctx):
-    try_guess(ctx, guild_table, ctx.message.guild.id)
+    await try_guess(ctx, guild_table, ctx.message.guild.id)
 
 
 @bot.command("tryself", aliases=["ts", "Ts", "Tryself"])
 async def try_guess_self(ctx):
-    try_guess(ctx, user_table, ctx.message.user.id)
+    await try_guess(ctx, user_table, ctx.message.user.id)
 
 
 async def get_curr(ctx, table, id):
@@ -158,11 +158,11 @@ async def get_curr(ctx, table, id):
 
 @bot.command("curr", aliases=["c", "C", "Curr"])
 async def get_curr_guild(ctx):
-    get_curr(ctx, guild_table, ctx.message.guild.id)
+    await get_curr(ctx, guild_table, ctx.message.guild.id)
 
 @bot.command("currself", aliases=["cs", "Cs", "Currself"])
 async def get_curr_self(ctx):
-    get_curr(ctx, user_table, ctx.message.user.id)
+    await get_curr(ctx, user_table, ctx.message.user.id)
 
 
 bot.run(TOKEN)
