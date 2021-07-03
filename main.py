@@ -17,14 +17,16 @@ image_table = boto3.resource("dynamodb").Table("street-view-image-metadata")
 num_images = boto3.resource("dynamodb").Table("constants").get_item(Key={"name": "num_images"})["Item"]["val"]
 image_bucket = boto3.resource("s3").Bucket("street-view-images")
 countries = json.loads(boto3.resource("s3").Bucket("country-data").Object("countries.json").get()["Body"].read().decode("utf-8"))
-valid_commands = {c : 1 for c in ["g", "G", "Get",
-                                  "gs", "Gs", "Getself",
-                                  "s", "S", "Skip",
-                                  "ss", "Ss", "Skipself",
-                                  "t", "T", "Try",
-                                  "ts", "Ts", "Tryself",
-                                  "c", "C", "Curr",
-                                  "cs", "Cs", "Currself"]}
+country_list = boto3.resource("s3").Bucket("country-data").Object("country_list.txt").get()["Body"].read().decode("utf-8")
+valid_commands = {c : 1 for c in ["get", "g", "G", "Get",
+                                  "Getself", "gs", "Gs", "Getself",
+                                  "skip", "s", "S", "Skip",
+                                  "skipself", "ss", "Ss", "Skipself",
+                                  "try", "t", "T", "Try",
+                                  "tryself", "ts", "Ts", "Tryself",
+                                  "curr", "c", "C", "Curr",
+                                  "currself", "cs", "Cs", "Currself",
+                                  "list", "l" , "L", "List"]}
 
 bot = discord.ext.commands.Bot(command_prefix="")
 
@@ -176,5 +178,10 @@ async def get_curr_guild(ctx):
 @bot.command("currself", aliases=["cs", "Cs", "Currself"])
 async def get_curr_self(ctx):
     await get_curr(ctx, user_table, ctx.message.user.id)
+
+@bot.command("list", aliases=["l", "L", "List"])
+async def list_countries(ctx):
+    await ctx.send(country_list[:1499])
+    await ctx.send(country_list[1499:3000])
 
 bot.run(TOKEN)
