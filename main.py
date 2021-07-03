@@ -17,8 +17,21 @@ image_table = boto3.resource("dynamodb").Table("street-view-image-metadata")
 num_images = boto3.resource("dynamodb").Table("constants").get_item(Key={"name": "num_images"})["Item"]["val"]
 image_bucket = boto3.resource("s3").Bucket("street-view-images")
 countries = json.loads(boto3.resource("s3").Bucket("country-data").Object("countries.json").get()["Body"].read().decode("utf-8"))
+valid_commands = {c : 1 for c in ["g", "G", "Get",
+                                  "gs", "Gs", "Getself",
+                                  "s", "S", "Skip",
+                                  "ss", "Ss", "Skipself",
+                                  "t", "T", "Try",
+                                  "ts", "Ts", "Tryself",
+                                  "c", "C", "Curr",
+                                  "cs", "Cs", "Currself"]}
 
 bot = discord.ext.commands.Bot(command_prefix="")
+
+@bot.event
+async def on_message(message):
+    if message.content.split(" ")[0] in valid_commands:
+        await bot.process_commands(message)
 
 async def get_image(ctx, table, id):
     try:
@@ -163,6 +176,5 @@ async def get_curr_guild(ctx):
 @bot.command("currself", aliases=["cs", "Cs", "Currself"])
 async def get_curr_self(ctx):
     await get_curr(ctx, user_table, ctx.message.user.id)
-
 
 bot.run(TOKEN)
