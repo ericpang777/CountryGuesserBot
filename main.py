@@ -183,5 +183,6 @@ async def get_curr_self(ctx):
 async def list_countries(ctx):
     await ctx.send(country_list[:1499])
     await ctx.send(country_list[1499:3000])
+    await ctx.send(country_list[3000:])
 
 bot.run(TOKEN)
