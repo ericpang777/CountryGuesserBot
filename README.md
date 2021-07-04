@@ -4,8 +4,8 @@ Discord bot for guessing the location a Google Street View image was taken.
 
 Still missing a couple countries' shapefiles for processing
 To add:
-   - [] Canada
-   - [] USA
+   - [x] Canada
+   - [x] USA
    - [] UK
    - [] France
    - [] Germany
