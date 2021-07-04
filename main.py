@@ -73,7 +73,7 @@ async def get_image_guild(ctx):
 
 @bot.command(name="getself", aliases=["gs", "Gs", "Getself"])
 async def get_image_self(ctx):
-    await get_image(ctx, user_table, ctx.message.user.id)
+    await get_image(ctx, user_table, ctx.message.author.id)
 
 
 async def skip_image(ctx, table, id):
@@ -106,7 +106,7 @@ async def skip_image_guild(ctx):
 
 @bot.command("skipself", aliases=["ss", "Ss", "Skipself"])
 async def skip_image_self(ctx):
-    await skip_image(ctx, user_table, ctx.message.user.id)
+    await skip_image(ctx, user_table, ctx.message.author.id)
 
 
 async def try_guess(ctx, table, id):
@@ -155,7 +155,7 @@ async def try_guess_guild(ctx):
 
 @bot.command("tryself", aliases=["ts", "Ts", "Tryself"])
 async def try_guess_self(ctx):
-    await try_guess(ctx, user_table, ctx.message.user.id)
+    await try_guess(ctx, user_table, ctx.message.author.id)
 
 
 async def get_curr(ctx, table, id):
@@ -177,7 +177,7 @@ async def get_curr_guild(ctx):
 
 @bot.command("currself", aliases=["cs", "Cs", "Currself"])
 async def get_curr_self(ctx):
-    await get_curr(ctx, user_table, ctx.message.user.id)
+    await get_curr(ctx, user_table, ctx.message.author.id)
 
 @bot.command("list", aliases=["l", "L", "List"])
 async def list_countries(ctx):

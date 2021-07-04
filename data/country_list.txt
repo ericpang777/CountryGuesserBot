@@ -1,159 +1,159 @@
-Afghanistan,AF,AFG
-Angola,AO,AGO
-Albania,AL,ALB
-Andorra,AD,AND
-Argentina,AR,ARG
-Armenia,AM,ARM
-Australia,AU,AUS
-Austria,AT,AUT
-Azerbaijan,AZ,AZE
-azores
-Burundi,BI,BDI
-Belgium,BE,BEL
-Benin,BJ,BEN
-Burkina Faso,BF,BFA
-Bangladesh,BD,BGD
-Bulgaria,BG,BGR
-Bahamas,BS,BHS
-Bosnia and Herzegovina,BA,BIH
-Belarus,BY,BLR
-Belize,BZ,BLZ
-Bolivia,BO,BOL
-Bhutan,BT,BTN
-Botswana,BW,BWA
-canary-islands
-Switzerland,CH,CHE
-Chile,CL,CHL
-China,CN,CHN
-Cote d'Ivoire,CI,CIV
-Cameroon,CM,CMR
-Democratic Republic of the Congo,CD,COD
-Republic of the Congo,CG,COG
-Cook Islands,CK,COK
-Colombia,CO,COL
-Comoros,KM,COM
-Cape Verde,CV,CPV
-Costa Rica,CR,CRI
-Cuba,CU,CUB
-Cyprus,CY,CYP
-Czech Republic,CZ,CZE
-Djibouti,DJ,DJI
-Denmark,DK,DNK
-Algeria,DZ,DZA
-Egypt,EG,EGY
-Eritrea,ER,ERI
-Spain,ES,ESP
-Estonia,EE,EST
-Ethiopia,ET,ETH
-Finland,FI,FIN
-Fiji,FJ,FJI
-Faroe Islands,FO,FRO
-Micronesia,FM,FSM
-Gabon,GA,GAB
-Georgia,GE,GEO
-Ghana,GH,GHA
-Guinea,GN,GIN
-Guinea-Bissau,GW,GNB
-Equatorial Guinea,GQ,GNQ
-Greece,GR,GRC
-Greenland,GL,GRL
-Guatemala,GT,GTM
-Honduras,HN,HND
-Croatia,HR,HRV
-Hungary,HU,HUN
-Indonesia,ID,IDN
-Isle of Man,IM,IMN
-India,IN,IND
-Iran,IR,IRN
-Iraq,IQ,IRQ
-Iceland,IS,ISL
-Jamaica,JM,JAM
-Jordan,JO,JOR
-Kazakhstan,KZ,KAZ
-Kenya,KE,KEN
-Kyrgyzstan,KG,KGZ
-Cambodia,KH,KHM
-Kiribati,KI,KIR
-South Korea,KR,KOR
-kosovo
-Laos,LA,LAO
-Lebanon,LB,LBN
-Libya,LY,LBY
-Liechtenstein,LI,LIE
-Sri Lanka,LK,LKA
-Lesotho,LS,LSO
-Luxembourg,LU,LUX
-Latvia,LV,LVA
-Morocco,MA,MAR
-Monaco,MC,MCO
-Moldova,MD,MDA
-Madagascar,MG,MDG
-Maldives,MV,MDV
-Mexico,MX,MEX
-Marshall Islands,MH,MHL
-North Macedonia,MK,MKD
-Mali,ML,MLI
-Malta,MT,MLT
-Myanmar,MM,MMR
-Montenegro,ME,MNE
-Mongolia,MN,MNG
-Mozambique,MZ,MOZ
-Mauritania,MR,MRT
-Mauritius,MU,MUS
-Malawi,MW,MWI
-Namibia,NA,NAM
-New Caledonia,NC,NCL
-Nigeria,NG,NGA
-Niue,NU,NIU
-Netherlands,NL,NLD
-Norway,NO,NOR
-Nepal,NP,NPL
-Nauru,NR,NRU
-New Zealand,NZ,NZL
-Pakistan,PK,PAK
-Pitcairn Islands,PN,PCN
-Peru,PE,PER
-Philippines,PH,PHL
-Palau,PW,PLW
-Papua New Guinea,PG,PNG
-Portugal,PT,PRT
-Paraguay,PY,PRY
-French Polynesia,PF,PYF
-Romania,RO,ROU
-Rwanda,RW,RWA
-Sudan,SD,SDN
-Saint Helena, Ascension and Tristan da Cunha,SH,SHN
-Solomon Islands,SB,SLB
-Sierra Leone,SL,SLE
-El Salvador,SV,SLV
-Somalia,SO,SOM
-Serbia,RS,SRB
-Sao Tome and Principe,ST,STP
-Suriname,SR,SUR
-Slovakia,SK,SVK
-Slovenia,SI,SVN
-Sweden,SE,SWE
-Eswatini,SZ,SWZ
-Seychelles,SC,SYC
-Syria,SY,SYR
-Togo,TG,TGO
-Thailand,TH,THA
-Turkmenistan,TM,TKM
-Tonga,TO,TON
-Tunisia,TN,TUN
-Turkey,TR,TUR
-Tuvalu,TV,TUV
-Taiwan,TW,TWN
-Tanzania,TZ,TZA
-Uganda,UG,UGA
-Ukraine,UA,UKR
-Uruguay,UY,URY
-Uzbekistan,UZ,UZB
-Venezuela,VE,VEN
-Vietnam,VN,VNM
-Vanuatu,VU,VUT
-Samoa,WS,WSM
-Yemen,YE,YEM
-South Africa,ZA,ZAF
-Zambia,ZM,ZMB
-Zimbabwe,ZW,ZWE
+Afghanistan,AF,AFG : 4
+Angola,AO,AGO : 17
+Albania,AL,ALB : 66
+Andorra,AD,AND : 140
+Argentina,AR,ARG : 79
+Armenia,AM,ARM : 52
+Australia,AU,AUS : 104
+Austria,AT,AUT : 114
+Azerbaijan,AZ,AZE : 37
+azores : 102
+Burundi,BI,BDI : 2
+Belgium,BE,BEL : 148
+Benin,BJ,BEN : 3
+Burkina Faso,BF,BFA : 4
+Bangladesh,BD,BGD : 50
+Bulgaria,BG,BGR : 122
+Bahamas,BS,BHS : 75
+Bosnia and Herzegovina,BA,BIH : 43
+Belarus,BY,BLR : 68
+Belize,BZ,BLZ : 41
+Bolivia,BO,BOL : 27
+Bhutan,BT,BTN : 54
+Botswana,BW,BWA : 57
+Canada,CA,CAN : 99
+Switzerland,CH,CHE : 140
+Chile,CL,CHL : 60
+China,CN,CHN : 28
+Cote d'Ivoire,CI,CIV : 10
+Cameroon,CM,CMR : 11
+Democratic Republic of the Congo,CD,COD : 3
+Republic of the Congo,CG,COG : 7
+Cook Islands,CK,COK : 95
+Colombia,CO,COL : 82
+Comoros,KM,COM : 14
+Cape Verde,CV,CPV : 57
+Costa Rica,CR,CRI : 80
+Cuba,CU,CUB : 29
+Cyprus,CY,CYP : 92
+Czech Republic,CZ,CZE : 141
+Djibouti,DJ,DJI : 6
+Denmark,DK,DNK : 139
+Algeria,DZ,DZA : 30
+Egypt,EG,EGY : 37
+Eritrea,ER,ERI : 2
+Spain,ES,ESP : 126
+Estonia,EE,EST : 141
+Ethiopia,ET,ETH : 9
+Finland,FI,FIN : 104
+Fiji,FJ,FJI : 47
+Faroe Islands,FO,FRO : 135
+Micronesia,FM,FSM : 42
+Gabon,GA,GAB : 3
+Georgia,GE,GEO : 53
+Ghana,GH,GHA : 61
+Guinea,GN,GIN : 1
+Guinea-Bissau,GW,GNB : 3
+Equatorial Guinea,GQ,GNQ : 6
+Greece,GR,GRC : 118
+Greenland,GL,GRL : 100
+Guatemala,GT,GTM : 70
+Honduras,HN,HND : 49
+Croatia,HR,HRV : 131
+Hungary,HU,HUN : 124
+Indonesia,ID,IDN : 109
+Isle of Man,IM,IMN : 146
+India,IN,IND : 69
+Iran,IR,IRN : 45
+Iraq,IQ,IRQ : 60
+Iceland,IS,ISL : 88
+Jamaica,JM,JAM : 27
+Jordan,JO,JOR : 80
+Kazakhstan,KZ,KAZ : 31
+Kenya,KE,KEN : 23
+Kyrgyzstan,KG,KGZ : 46
+Cambodia,KH,KHM : 103
+Kiribati,KI,KIR : 14
+South Korea,KR,KOR : 111
+kosovo : 53
+Laos,LA,LAO : 27
+Lebanon,LB,LBN : 70
+Libya,LY,LBY : 23
+Liechtenstein,LI,LIE : 125
+Sri Lanka,LK,LKA : 133
+Lesotho,LS,LSO : 42
+Luxembourg,LU,LUX : 142
+Latvia,LV,LVA : 128
+Morocco,MA,MAR : 27
+Monaco,MC,MCO : 133
+Moldova,MD,MDA : 51
+Madagascar,MG,MDG : 2
+Maldives,MV,MDV : 129
+Mexico,MX,MEX : 98
+Marshall Islands,MH,MHL : 35
+North Macedonia,MK,MKD : 67
+Mali,ML,MLI : 2
+Malta,MT,MLT : 148
+Myanmar,MM,MMR : 31
+Montenegro,ME,MNE : 91
+Mongolia,MN,MNG : 57
+Mozambique,MZ,MOZ : 1
+Mauritania,MR,MRT : 6
+Mauritius,MU,MUS : 89
+Malawi,MW,MWI : 7
+Namibia,NA,NAM : 10
+New Caledonia,NC,NCL : 49
+Nigeria,NG,NGA : 11
+Niue,NU,NIU : 10
+Netherlands,NL,NLD : 150
+Norway,NO,NOR : 120
+Nepal,NP,NPL : 34
+Nauru,NR,NRU : 10
+New Zealand,NZ,NZL : 98
+Pakistan,PK,PAK : 66
+Pitcairn Islands,PN,PCN : 134
+Peru,PE,PER : 65
+Philippines,PH,PHL : 103
+Palau,PW,PLW : 77
+Papua New Guinea,PG,PNG : 6
+Portugal,PT,PRT : 133
+Paraguay,PY,PRY : 38
+French Polynesia,PF,PYF : 111
+Romania,RO,ROU : 113
+Rwanda,RW,RWA : 11
+Sudan,SD,SDN : 7
+Saint Helena, Ascension and Tristan da Cunha,SH,SHN : 80
+Solomon Islands,SB,SLB : 8
+Sierra Leone,SL,SLE : 1
+El Salvador,SV,SLV : 58
+Somalia,SO,SOM : 4
+Serbia,RS,SRB : 56
+Sao Tome and Principe,ST,STP : 73
+Suriname,SR,SUR : 26
+Slovakia,SK,SVK : 128
+Slovenia,SI,SVN : 131
+Sweden,SE,SWE : 119
+Eswatini,SZ,SWZ : 50
+Seychelles,SC,SYC : 106
+Syria,SY,SYR : 7
+Togo,TG,TGO : 6
+Thailand,TH,THA : 135
+Turkmenistan,TM,TKM : 6
+Tonga,TO,TON : 86
+Tunisia,TN,TUN : 38
+Turkey,TR,TUR : 71
+Tuvalu,TV,TUV : 28
+Taiwan,TW,TWN : 148
+Tanzania,TZ,TZA : 10
+Uganda,UG,UGA : 8
+Ukraine,UA,UKR : 79
+Uruguay,UY,URY : 103
+Uzbekistan,UZ,UZB : 36
+Venezuela,VE,VEN : 20
+Vietnam,VN,VNM : 62
+Vanuatu,VU,VUT : 24
+Samoa,WS,WSM : 27
+Yemen,YE,YEM : 11
+South Africa,ZA,ZAF : 85
+Zambia,ZM,ZMB : 7
+Zimbabwe,ZW,ZWE : 10
