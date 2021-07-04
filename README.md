@@ -6,33 +6,33 @@ Still missing a couple countries' shapefiles for processing
 To add:
    - [x] Canada
    - [x] USA
-   - [] UK
-   - [] France
-   - [] Germany
-   - [] Italy
-   - [] Poland
-   - [] Russia
-   - [] Japan
-   - [] Brazil
-   - [] Antarctica
-   - [] Ireland
-   - [] Senegal
-   - [] Gambia
-   - [] Malaysia
-   - [] Singapore
-   - [] Brunei
-   - [] Israel
-   - [] Palestine
-   - [] Kuwait
-   - [] Saudi Arabia
-   - [] Bahrain
-   - [] Qatar
-   - [] UAE
-   - [] Oman
-   - [] Haiti
-   - [] Dominican Republic
-   - [] Nicaragua
-   - [] Tajikistan
-   - [] Ecuador
-   - [] Guernsey
-   - [] Jersey
+   - [ ] UK
+   - [ ] France
+   - [ ] Germany
+   - [ ] Italy
+   - [ ] Poland
+   - [ ] Russia
+   - [ ] Japan
+   - [ ] Brazil
+   - [ ] Antarctica
+   - [ ] Ireland
+   - [ ] Senegal
+   - [ ] Gambia
+   - [ ] Malaysia
+   - [ ] Singapore
+   - [ ] Brunei
+   - [ ] Israel
+   - [ ] Palestine
+   - [ ] Kuwait
+   - [ ] Saudi Arabia
+   - [ ] Bahrain
+   - [ ] Qatar
+   - [ ] UAE
+   - [ ] Oman
+   - [ ] Haiti
+   - [ ] Dominican Republic
+   - [ ] Nicaragua
+   - [ ] Tajikistan
+   - [ ] Ecuador
+   - [ ] Guernsey
+   - [ ] Jersey
