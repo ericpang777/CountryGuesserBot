@@ -42,7 +42,7 @@ Denmark,DK,DNK : 139
 Algeria,DZ,DZA : 30
 Egypt,EG,EGY : 37
 Eritrea,ER,ERI : 2
-Spain,ES,ESP : 126
+Spain,ES,ESP : 273
 Estonia,EE,EST : 141
 Ethiopia,ET,ETH : 9
 Finland,FI,FIN : 104
@@ -148,6 +148,7 @@ Tanzania,TZ,TZA : 10
 Uganda,UG,UGA : 8
 Ukraine,UA,UKR : 79
 Uruguay,UY,URY : 103
+United States of America,US,USA : 330
 Uzbekistan,UZ,UZB : 36
 Venezuela,VE,VEN : 20
 Vietnam,VN,VNM : 62
