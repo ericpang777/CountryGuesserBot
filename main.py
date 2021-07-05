@@ -60,7 +60,7 @@ async def get_image(ctx, table, id):
                 ":last_updated": str(datetime.datetime.now())
             }
         )
-        image_file = discord.File(io.BytesIO(image_obj.get()["Body"].read()), filename=f"place{rand}.jpg")
+        image_file = discord.File(io.BytesIO(image_obj.get()["Body"].read()), filename="place1.jpg")
         await ctx.send(file=image_file)
     else:
         await ctx.send("Currently guessing a different image")
