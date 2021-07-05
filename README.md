@@ -7,14 +7,14 @@ To add:
    - [x] Canada
    - [x] USA
    - [ ] UK
-   - [ ] France
-   - [ ] Germany
-   - [ ] Italy
+   - [x] France
+   - [x] Germany
+   - [x] Italy
    - [ ] Poland
    - [ ] Russia
    - [ ] Japan
    - [ ] Brazil
-   - [ ] Antarctica
+   - [x] Antarctica
    - [ ] Ireland
    - [ ] Senegal
    - [ ] Gambia
