@@ -181,8 +181,8 @@ async def get_curr_self(ctx):
 
 @bot.command("list", aliases=["l", "L", "List"])
 async def list_countries(ctx):
-    await ctx.send(country_list[:1498])
-    await ctx.send(country_list[1498:2991])
-    await ctx.send(country_list[2991:])
+    await ctx.send(country_list[:1492])
+    await ctx.send(country_list[1492:3009])
+    await ctx.send(country_list[3009:])
 
 bot.run(TOKEN)
