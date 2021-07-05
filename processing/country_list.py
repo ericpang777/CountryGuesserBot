@@ -33,3 +33,10 @@ with open("../data/country_list.txt", "w") as cl:
         cl.write(c)
         cl.write(" : " + str(counter_list[c.split(",")[-1]]))
         cl.write("\n")
+
+with open("../data/country_list.txt") as cl:
+    lines = cl.readlines()
+
+lines = sorted(lines, key=lambda x : x.split(",")[0].lower())
+with open("../data/country_list.txt", "w") as cl:
+    cl.writelines(lines)
