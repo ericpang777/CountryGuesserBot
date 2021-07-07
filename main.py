@@ -92,9 +92,16 @@ async def skip_image(ctx, table, id):
         actual_country = data["actual_country"]
         for c in countries["countries"]:
             if c["alpha_3_code"] == actual_country:
-                await ctx.send(f"The answer was {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}")
+                split = data["file_name"].split("_")
+                lat = split[1]
+                lon = split[2]
+                await ctx.send(f"The answer was {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
                 return
-        await ctx.send(f"The answer was {actual_country}")
+
+        split = data["file_name"].split("_")
+        lat = split[1]
+        lon = split[2]
+        await ctx.send(f"The answer was {actual_country}. ({lat}, {lon})")
     else:
         await ctx.send("No image was open")
 
