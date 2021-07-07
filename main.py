@@ -94,13 +94,13 @@ async def skip_image(ctx, table, id):
             if c["alpha_3_code"] == actual_country:
                 split = data["file_name"].split("_")
                 lat = split[1]
-                lon = split[2]
+                lon = split[2][:split[2].find(".")]
                 await ctx.send(f"The answer was {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
                 return
 
         split = data["file_name"].split("_")
         lat = split[1]
-        lon = split[2]
+        lon = split[2][:split[2].find(".")]
         await ctx.send(f"The answer was {actual_country}. ({lat}, {lon})")
     else:
         await ctx.send("No image was open")
@@ -140,7 +140,7 @@ async def try_guess(ctx, table, id):
                 if c["alpha_3_code"].lower() == actual_country:
                     split = data["file_name"].split("_")
                     lat = split[1]
-                    lon = split[2]
+                    lon = split[2][:split[2].find(".")]
                     await ctx.send(f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
                     return
             await ctx.send(f"Correct, {actual_country}, there are no codes")
@@ -160,7 +160,7 @@ async def try_guess(ctx, table, id):
 
                     split = data["file_name"].split("_")
                     lat = split[1]
-                    lon = split[2]
+                    lon = split[2][:split[2].find(".")]
                     await ctx.send(f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
                     return
         await ctx.send("Incorrect")
