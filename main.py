@@ -129,7 +129,11 @@ async def try_guess(ctx, table, id):
                     ":last_updated": str(datetime.datetime.now())
                 }
             )
-            await ctx.send("Correct")
+            for c in countries["countries"]:
+                if c["alpha_3_code"].lower() == actual_country:
+                    await ctx.send(f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}")
+                    return
+            await ctx.send(f"Correct, {actual_country}, there are no codes")
             return
 
         for c in countries["countries"]:
