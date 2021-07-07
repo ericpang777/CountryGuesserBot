@@ -13,7 +13,7 @@ To add:
    - [x] Poland
    - [x] Russia
    - [x] Japan
-   - [ ] Brazil
+   - [x] Brazil
    - [x] Antarctica
    - [ ] Ireland
    - [x] Senegal
