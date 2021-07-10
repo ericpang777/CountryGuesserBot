@@ -15,14 +15,14 @@ To add:
    - [x] Japan
    - [x] Brazil
    - [x] Antarctica
-   - [ ] Ireland
+   - [x] Ireland
    - [x] Senegal
    - [x] Gambia
    - [x] Malaysia
    - [x] Singapore
    - [x] Brunei
-   - [ ] Israel
-   - [ ] Palestine
+   - [x] Israel
+   - [x] Palestine
    - [x] Kuwait
    - [x] Saudi Arabia
    - [x] Bahrain
