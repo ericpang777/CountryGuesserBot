@@ -1,162 +1,200 @@
 Afghanistan,AF,AFG : 11
-Albania,AL,ALB : 139
+Albania,AL,ALB : 142
 Algeria,DZ,DZA : 85
-Andorra,AD,AND : 315
-Angola,AO,AGO : 34
+Andorra,AD,AND : 324
+Angola,AO,AGO : 35
+Antarctica,AQ,ATA : 115
+Antigua and Barbuda,AG,ATG : 131
 Argentina,AR,ARG : 190
-Armenia,AM,ARM : 120
+Armenia,AM,ARM : 124
 Australia,AU,AUS : 246
-Austria,AT,AUT : 263
+Austria,AT,AUT : 264
 Azerbaijan,AZ,AZE : 90
 azores : 102
-Bahamas,BS,BHS : 158
-Bangladesh,BD,BGD : 121
-Belarus,BY,BLR : 147
+Bahamas,BS,BHS : 168
+Bahrain,BH,BHR : 303
+Bangladesh,BD,BGD : 122
+Barbados,BB,BRB : 197
+Belarus,BY,BLR : 148
 Belgium,BE,BEL : 347
-Belize,BZ,BLZ : 69
+Belize,BZ,BLZ : 79
 Benin,BJ,BEN : 8
-Bhutan,BT,BTN : 129
+Bhutan,BT,BTN : 130
 Bolivia,BO,BOL : 58
-Bosnia and Herzegovina,BA,BIH : 96
+Bosnia and Herzegovina,BA,BIH : 97
 Botswana,BW,BWA : 122
+Brazil,BR,BRA : 282
+Brunei,BN,BRN : 139
 Bulgaria,BG,BGR : 281
 Burkina Faso,BF,BFA : 7
 Burundi,BI,BDI : 2
 Cambodia,KH,KHM : 242
 Cameroon,CM,CMR : 19
 Canada,CA,CAN : 530
-Cape Verde,CV,CPV : 122
+Cape Verde,CV,CPV : 135
 Chile,CL,CHL : 156
 China,CN,CHN : 55
 Colombia,CO,COL : 192
-Comoros,KM,COM : 26
-Cook Islands,CK,COK : 175
+Comoros,KM,COM : 33
+Cook Islands,CK,COK : 195
 Costa Rica,CR,CRI : 193
 Cote d'Ivoire,CI,CIV : 22
 Croatia,HR,HRV : 305
-Cuba,CU,CUB : 67
-Cyprus,CY,CYP : 206
+Cuba,CU,CUB : 68
+Cyprus,CY,CYP : 207
 Czech Republic,CZ,CZE : 333
 Democratic Republic of the Congo,CD,COD : 6
 Denmark,DK,DNK : 334
-Djibouti,DJ,DJI : 9
-Egypt,EG,EGY : 97
-El Salvador,SV,SLV : 141
-Equatorial Guinea,GQ,GNQ : 9
-Eritrea,ER,ERI : 5
+Djibouti,DJ,DJI : 14
+Dominican Republic,DO,DOM : 200
+Ecuador,EC,ECU : 124
+Egypt,EG,EGY : 98
+El Salvador,SV,SLV : 142
+Equatorial Guinea,GQ,GNQ : 13
+Eritrea,ER,ERI : 6
 Estonia,EE,EST : 331
-Eswatini,SZ,SWZ : 106
+Eswatini,SZ,SWZ : 108
 Ethiopia,ET,ETH : 16
-Faroe Islands,FO,FRO : 325
-Fiji,FJ,FJI : 106
+Faroe Islands,FO,FRO : 327
+Fiji,FJ,FJI : 109
 Finland,FI,FIN : 251
-French Polynesia,PF,PYF : 258
-Gabon,GA,GAB : 8
-Georgia,GE,GEO : 117
+France,FR,FRA : 347
+French Polynesia,PF,PYF : 264
+Gabon,GA,GAB : 9
+Gambia,GM,GMB : 19
+Georgia,GE,GEO : 119
+Germany,DE,DEU : 249
 Ghana,GH,GHA : 135
 Greece,GR,GRC : 278
-Greenland,GL,GRL : 243
-Guatemala,GT,GTM : 154
+Greenland,GL,GRL : 248
+Grenada,GD,GRD : 68
+Guatemala,GT,GTM : 155
+Guernsey,GG,GGY : 201
 Guinea,GN,GIN : 1
 Guinea-Bissau,GW,GNB : 4
-Honduras,HN,HND : 101
+Haiti,HT,HTI : 24
+Honduras,HN,HND : 104
 Hungary,HU,HUN : 294
 Iceland,IS,ISL : 216
 India,IN,IND : 150
 Indonesia,ID,IDN : 243
-Iran,IR,IRN : 107
-Iraq,IQ,IRQ : 140
-Isle of Man,IM,IMN : 335
-Jamaica,JM,JAM : 56
-Jordan,JO,JOR : 173
+Iran,IR,IRN : 108
+Iraq,IQ,IRQ : 142
+Ireland,IE,IRL : 198
+Isle of Man,IM,IMN : 337
+Israel,IL,ISR : 293
+Italy,IT,ITA : 338
+Jamaica,JM,JAM : 60
+Japan,JP,JPN : 327
+Jersey,JE,JEY : 339
+Jordan,JO,JOR : 175
 Kazakhstan,KZ,KAZ : 76
 Kenya,KE,KEN : 66
-Kiribati,KI,KIR : 17
-kosovo : 120
-Kyrgyzstan,KG,KGZ : 113
+Kiribati,KI,KIR : 28
+kosovo : 128
+Kuwait,KW,KWT : 238
+Kyrgyzstan,KG,KGZ : 114
 Laos,LA,LAO : 64
 Latvia,LV,LVA : 301
-Lebanon,LB,LBN : 152
+Lebanon,LB,LBN : 154
 Lesotho,LS,LSO : 118
 Liberia,LR,LBR : 1
-Libya,LY,LBY : 54
-Liechtenstein,LI,LIE : 250
-Luxembourg,LU,LUX : 331
+Libya,LY,LBY : 55
+Liechtenstein,LI,LIE : 285
+Luxembourg,LU,LUX : 332
 Madagascar,MG,MDG : 4
 Malawi,MW,MWI : 10
-Maldives,MV,MDV : 290
+Malaysia,MY,MYS : 234
+Maldives,MV,MDV : 305
 Mali,ML,MLI : 4
 Malta,MT,MLT : 345
-Marshall Islands,MH,MHL : 52
-Mauritania,MR,MRT : 19
-Mauritius,MU,MUS : 188
+Marshall Islands,MH,MHL : 76
+Mauritania,MR,MRT : 20
+Mauritius,MU,MUS : 205
 Mexico,MX,MEX : 214
-Micronesia,FM,FSM : 71
+Micronesia,FM,FSM : 91
 Moldova,MD,MDA : 103
-Monaco,MC,MCO : 291
+Monaco,MC,MCO : 313
 Mongolia,MN,MNG : 113
 Montenegro,ME,MNE : 202
 Morocco,MA,MAR : 62
 Mozambique,MZ,MOZ : 4
 Myanmar,MM,MMR : 76
 Namibia,NA,NAM : 33
-Nauru,NR,NRU : 10
+Nauru,NR,NRU : 20
 Nepal,NP,NPL : 80
 Netherlands,NL,NLD : 350
-New Caledonia,NC,NCL : 107
+New Caledonia,NC,NCL : 112
 New Zealand,NZ,NZL : 246
+Nicaragua,NI,NIC : 102
 Niger,NE,NER : 1
 Nigeria,NG,NGA : 31
-Niue,NU,NIU : 13
+Niue,NU,NIU : 22
 North Korea,KP,PRK : 3
-North Macedonia,MK,MKD : 161
+North Macedonia,MK,MKD : 163
 Norway,NO,NOR : 279
-Pakistan,PK,PAK : 154
-Palau,PW,PLW : 170
-Papua New Guinea,PG,PNG : 13
-Paraguay,PY,PRY : 103
+Oman,OM,OMN : 118
+Pakistan,PK,PAK : 155
+Palau,PW,PLW : 187
+Palestine,PS,PSE : 173
+Panama,PA,PAN : 95
+Papua New Guinea,PG,PNG : 14
+Paraguay,PY,PRY : 104
 Peru,PE,PER : 133
 Philippines,PH,PHL : 244
-Pitcairn Islands,PN,PCN : 266
+Pitcairn Islands,PN,PCN : 301
 Portugal,PT,PRT : 306
-Republic of the Congo,CG,COG : 18
+Qatar,QA,QAT : 204
+Republic of the Congo,CG,COG : 19
 Romania,RO,ROU : 253
-Rwanda,RW,RWA : 17
-Saint Helena, Ascension and Tristan da Cunha,SH,SHN : 177
-Samoa,WS,WSM : 45
-Sao Tome and Principe,ST,STP : 136
+Russia,RU,RUS : 199
+Rwanda,RW,RWA : 18
+Saint Helena, Ascension and Tristan da Cunha,SH,SHN : 193
+Saint Kitts and Nevis,KN,KNA : 73
+Saint Lucia,LC,LCA : 80
+Saint Vincent and the Grenadines,VC,VCT : 57
+Samoa,WS,WSM : 53
+Sao Tome and Principe,ST,STP : 152
+Saudi Arabia,SA,SAU : 152
+Senegal,SN,SEN : 132
 Serbia,RS,SRB : 144
-Seychelles,SC,SYC : 194
+Seychelles,SC,SYC : 235
 Sierra Leone,SL,SLE : 6
+Singapore,SG,SGP : 343
 Slovakia,SK,SVK : 289
 Slovenia,SI,SVN : 305
-Solomon Islands,SB,SLB : 13
+Solomon Islands,SB,SLB : 16
 Somalia,SO,SOM : 9
 South Africa,ZA,ZAF : 204
-South Korea,KR,KOR : 261
+South Korea,KR,KOR : 262
 South Sudan,SS,SSD : 2
 Spain,ES,ESP : 447
 Sri Lanka,LK,LKA : 304
 Sudan,SD,SDN : 19
-Suriname,SR,SUR : 52
+Suriname,SR,SUR : 58
 Sweden,SE,SWE : 279
 Switzerland,CH,CHE : 335
-Syria,SY,SYR : 38
+Syria,SY,SYR : 39
 Taiwan,TW,TWN : 339
+Tajikistan,TJ,TJK : 43
 Tanzania,TZ,TZA : 10
 Thailand,TH,THA : 318
-Togo,TG,TGO : 13
-Tonga,TO,TON : 188
+Timor-Leste,TL,TLS : 19
+Togo,TG,TGO : 14
+Tonga,TO,TON : 204
+Trinidad and Tobago,TT,TTO : 80
 Tunisia,TN,TUN : 81
 Turkey,TR,TUR : 164
-Turkmenistan,TM,TKM : 15
-Tuvalu,TV,TUV : 35
+Turkmenistan,TM,TKM : 17
+Tuvalu,TV,TUV : 56
 Uganda,UG,UGA : 20
 Ukraine,UA,UKR : 173
+United Arab Emirates,AE,ARE : 251
+United Kingdom,GB,GBR : 342
 United States of America,US,USA : 330
 Uruguay,UY,URY : 238
 Uzbekistan,UZ,UZB : 72
-Vanuatu,VU,VUT : 57
+Vanuatu,VU,VUT : 58
 Venezuela,VE,VEN : 48
 Vietnam,VN,VNM : 154
 Yemen,YE,YEM : 18

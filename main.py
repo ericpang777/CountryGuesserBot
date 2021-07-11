@@ -1,5 +1,7 @@
 import io
 import os
+import random
+
 import discord
 from dotenv import load_dotenv
 from discord.ext import commands
@@ -14,10 +16,10 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 user_table = boto3.resource("dynamodb").Table("user-data")
 guild_table = boto3.resource("dynamodb").Table("guild-data")
 image_table = boto3.resource("dynamodb").Table("street-view-image-metadata")
-num_images = boto3.resource("dynamodb").Table("constants").get_item(Key={"name": "num_images"})["Item"]["val"]
 image_bucket = boto3.resource("s3").Bucket("street-view-images")
 countries = json.loads(boto3.resource("s3").Bucket("country-data").Object("countries.json").get()["Body"].read().decode("utf-8"))
 country_list = boto3.resource("s3").Bucket("country-data").Object("country_list.txt").get()["Body"].read().decode("utf-8")
+country_intervals = json.loads(boto3.resource("s3").Bucket("country-data").Object("country_intervals.json").get()["Body"].read().decode("utf-8"))
 valid_commands = {c : 1 for c in ["get", "g", "G", "Get",
                                   "Getself", "gs", "Gs", "Getself",
                                   "skip", "s", "S", "Skip",
@@ -42,8 +44,19 @@ async def get_image(ctx, table, id):
         guess_status = "closed"
 
     if guess_status == "closed":
+        rand_country, rand_interval = random.choice(list(country_intervals.items()))
+        num_images = sum([i[1] for i in rand_interval])
         rand = numpy.random.randint(num_images, size=1)[0]
-        image_metadata = image_table.get_item(Key={"index": int(rand)})["Item"]
+        curr_interval = 0
+        while rand >= 0:
+            if rand_interval[curr_interval][1] < rand:
+                rand -= rand_interval[curr_interval][1]
+                curr_interval += 1
+            else:
+                index = rand_interval[curr_interval][0] + rand
+                rand -= rand_interval[curr_interval][1]
+
+        image_metadata = image_table.get_item(Key={"index": int(index)})["Item"]
         image_name = image_metadata["name"]
         image_country = image_metadata["country"]
         image_obj = image_bucket.Object(image_name)
