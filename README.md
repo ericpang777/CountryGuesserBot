@@ -37,14 +37,14 @@ To add:
    - [x] Guernsey
    - [x] Jersey
    - [x] East Timor
-   - [ ] Panama
-   - [ ] Trinidad and Tobago
-   - [ ] Antigua and Barbuda
-   - [ ] Barbados
-   - [ ] Grenada
-   - [ ] Saint Kitts and Nevis
-   - [ ] Saint Lucia
-   - [ ] Saint Vincent and the Grenadines
+   - [x] Panama
+   - [x] Trinidad and Tobago
+   - [x] Antigua and Barbuda
+   - [x] Barbados
+   - [x] Grenada
+   - [x] Saint Kitts and Nevis
+   - [x] Saint Lucia
+   - [x] Saint Vincent and the Grenadines
 
 Got most of the road shapefiles from https://download.geofabrik.de/  
 Got Canada from https://www12.statcan.gc.ca/census-recensement/2011/geo/RNF-FRR/index-s-eng.cfm?year=20  
