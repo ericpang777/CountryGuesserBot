@@ -17,25 +17,80 @@ user_table = boto3.resource("dynamodb").Table("user-data")
 guild_table = boto3.resource("dynamodb").Table("guild-data")
 image_table = boto3.resource("dynamodb").Table("street-view-image-metadata")
 image_bucket = boto3.resource("s3").Bucket("street-view-images")
-countries = json.loads(boto3.resource("s3").Bucket("country-data").Object("countries.json").get()["Body"].read().decode("utf-8"))
-country_list = boto3.resource("s3").Bucket("country-data").Object("country_list.txt").get()["Body"].read().decode("utf-8")
-country_intervals = json.loads(boto3.resource("s3").Bucket("country-data").Object("country_intervals.json").get()["Body"].read().decode("utf-8"))
-valid_commands = {c : 1 for c in ["get", "g", "G", "Get",
-                                  "Getself", "gs", "Gs", "Getself",
-                                  "skip", "s", "S", "Skip",
-                                  "skipself", "ss", "Ss", "Skipself",
-                                  "try", "t", "T", "Try",
-                                  "tryself", "ts", "Ts", "Tryself",
-                                  "curr", "c", "C", "Curr",
-                                  "currself", "cs", "Cs", "Currself",
-                                  "list", "l" , "L", "List"]}
+countries = json.loads(
+    boto3.resource("s3")
+    .Bucket("country-data")
+    .Object("countries.json")
+    .get()["Body"]
+    .read()
+    .decode("utf-8")
+)
+country_list = (
+    boto3.resource("s3")
+    .Bucket("country-data")
+    .Object("country_list.txt")
+    .get()["Body"]
+    .read()
+    .decode("utf-8")
+)
+country_intervals = json.loads(
+    boto3.resource("s3")
+    .Bucket("country-data")
+    .Object("country_intervals.json")
+    .get()["Body"]
+    .read()
+    .decode("utf-8")
+)
+valid_commands = {
+    c: 1
+    for c in [
+        "get",
+        "g",
+        "G",
+        "Get",
+        "Getself",
+        "gs",
+        "Gs",
+        "Getself",
+        "skip",
+        "s",
+        "S",
+        "Skip",
+        "skipself",
+        "ss",
+        "Ss",
+        "Skipself",
+        "try",
+        "t",
+        "T",
+        "Try",
+        "tryself",
+        "ts",
+        "Ts",
+        "Tryself",
+        "curr",
+        "c",
+        "C",
+        "Curr",
+        "currself",
+        "cs",
+        "Cs",
+        "Currself",
+        "list",
+        "l",
+        "L",
+        "List",
+    ]
+}
 
 bot = discord.ext.commands.Bot(command_prefix="")
+
 
 @bot.event
 async def on_message(message):
     if message.content.split(" ")[0] in valid_commands:
         await bot.process_commands(message)
+
 
 async def get_image(ctx, table, id):
     try:
@@ -70,10 +125,12 @@ async def get_image(ctx, table, id):
                 ":guess_status": "open",
                 ":file_name": image_name,
                 ":actual_country": image_country,
-                ":last_updated": str(datetime.datetime.now())
-            }
+                ":last_updated": str(datetime.datetime.now()),
+            },
         )
-        image_file = discord.File(io.BytesIO(image_obj.get()["Body"].read()), filename="place1.jpg")
+        image_file = discord.File(
+            io.BytesIO(image_obj.get()["Body"].read()), filename="place1.jpg"
+        )
         await ctx.send(file=image_file)
     else:
         await ctx.send("Currently guessing a different image")
@@ -99,21 +156,23 @@ async def skip_image(ctx, table, id):
             UpdateExpression="SET guess_status=:guess_status, last_updated=:last_updated",
             ExpressionAttributeValues={
                 ":guess_status": "closed",
-                ":last_updated": str(datetime.datetime.now())
-            }
+                ":last_updated": str(datetime.datetime.now()),
+            },
         )
         actual_country = data["actual_country"]
         for c in countries["countries"]:
             if c["alpha_3_code"] == actual_country:
                 split = data["file_name"].split("_")
                 lat = round(float(split[1]), 4)
-                lon = round(float(split[2][:split[2].find("j")-1]), 4)
-                await ctx.send(f"The answer was {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
+                lon = round(float(split[2][: split[2].find("j") - 1]), 4)
+                await ctx.send(
+                    f"The answer was {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})"
+                )
                 return
 
         split = data["file_name"].split("_")
         lat = round(float(split[1]), 4)
-        lon = round(float(split[2][:split[2].find("j")-1]), 4)
+        lon = round(float(split[2][: split[2].find("j") - 1]), 4)
         await ctx.send(f"The answer was {actual_country}. ({lat}, {lon})")
     else:
         await ctx.send("No image was open")
@@ -137,7 +196,7 @@ async def try_guess(ctx, table, id):
         await ctx.send("No image currently open")
     else:
         message = ctx.message.content.strip().lower()
-        message = message[message.find(" "):].strip()
+        message = message[message.find(" ") :].strip()
         actual_country = data["actual_country"].lower()
 
         if actual_country == message:
@@ -146,35 +205,43 @@ async def try_guess(ctx, table, id):
                 UpdateExpression="SET guess_status=:guess_status, last_updated=:last_updated",
                 ExpressionAttributeValues={
                     ":guess_status": "closed",
-                    ":last_updated": str(datetime.datetime.now())
-                }
+                    ":last_updated": str(datetime.datetime.now()),
+                },
             )
             for c in countries["countries"]:
                 if c["alpha_3_code"].lower() == actual_country:
                     split = data["file_name"].split("_")
                     lat = round(float(split[1]), 4)
-                    lon = round(float(split[2][:split[2].find("j")-1]), 4)
-                    await ctx.send(f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
+                    lon = round(float(split[2][: split[2].find("j") - 1]), 4)
+                    await ctx.send(
+                        f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})"
+                    )
                     return
             await ctx.send(f"Correct, {actual_country}, there are no codes")
             return
 
         for c in countries["countries"]:
             if c["alpha_3_code"].lower() == actual_country:
-                if c["name"].lower() == message or c["alpha_2_code"].lower() == message or c["alpha_3_code"].lower() == message:
+                if (
+                    c["name"].lower() == message
+                    or c["alpha_2_code"].lower() == message
+                    or c["alpha_3_code"].lower() == message
+                ):
                     table.update_item(
                         Key={"id": str(id)},
                         UpdateExpression="SET guess_status=:guess_status, last_updated=:last_updated",
                         ExpressionAttributeValues={
                             ":guess_status": "closed",
-                            ":last_updated": str(datetime.datetime.now())
-                        }
+                            ":last_updated": str(datetime.datetime.now()),
+                        },
                     )
 
                     split = data["file_name"].split("_")
                     lat = round(float(split[1]), 4)
-                    lon = round(float(split[2][:split[2].find("j")-1]), 4)
-                    await ctx.send(f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})")
+                    lon = round(float(split[2][: split[2].find("j") - 1]), 4)
+                    await ctx.send(
+                        f"Correct, {c['name']}, codes: {c['alpha_2_code']}, {c['alpha_3_code']}. ({lat}, {lon})"
+                    )
                     return
         await ctx.send("Incorrect")
 
@@ -197,23 +264,29 @@ async def get_curr(ctx, table, id):
             image_obj = image_bucket.Object(image_name)
             file_stream = io.BytesIO()
             image_obj.download_fileobj(file_stream)
-            image_file = discord.File(io.BytesIO(image_obj.get()["Body"].read()), filename=f"place1.jpg")
+            image_file = discord.File(
+                io.BytesIO(image_obj.get()["Body"].read()), filename=f"place1.jpg"
+            )
             await ctx.send(file=image_file)
     except:
         await ctx.send("Something went wrong")
+
 
 @bot.command("curr", aliases=["c", "C", "Curr"])
 async def get_curr_guild(ctx):
     await get_curr(ctx, guild_table, ctx.message.guild.id)
 
+
 @bot.command("currself", aliases=["cs", "Cs", "Currself"])
 async def get_curr_self(ctx):
     await get_curr(ctx, user_table, ctx.message.author.id)
+
 
 @bot.command("list", aliases=["l", "L", "List"])
 async def list_countries(ctx):
     await ctx.send(country_list[:1492])
     await ctx.send(country_list[1492:3004])
     await ctx.send(country_list[3004:])
+
 
 bot.run(TOKEN)
